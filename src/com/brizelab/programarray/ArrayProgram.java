@@ -65,6 +65,18 @@ public class ArrayProgram {
             System.out.print(arr[i] + " ");
         }
     }
+    public static void printDublicate(int arr[]){
+        System.out.println("dublicte element of array");
+        for (int i = 0; i <arr.length ; i++) {
+            for (int j = i+1; j < arr.length; j++) {
+                if(arr[i]==arr[j]){
+                    System.out.println(arr[j]);
+                }
+
+            }
+
+        }
+    }
 
         public static void main(String[] args) {
             Scanner sc = new Scanner(System.in);
@@ -82,5 +94,6 @@ public class ArrayProgram {
             evenPosition(arr);
             oddPosition(arr);
             reverseOrder(arr);
+            printDublicate(arr);
     }
 }
