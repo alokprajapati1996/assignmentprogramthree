@@ -59,7 +59,13 @@ public class ArrayProgram {
         for (int i = 0; i < arr.length; i=i+2) {
             System.out.print(arr[i]+" ");
         }
+    }public static void reverseOrder(int arr[]) {
+        System.out.println("print element of array in reverse order");
+        for (int i = arr.length - 1; i >= 0; i--) {
+            System.out.print(arr[i] + " ");
+        }
     }
+
         public static void main(String[] args) {
             Scanner sc = new Scanner(System.in);
             System.out.println("Enter size of Array");
@@ -75,5 +81,6 @@ public class ArrayProgram {
             smallestElement(arr);
             evenPosition(arr);
             oddPosition(arr);
+            reverseOrder(arr);
     }
 }
