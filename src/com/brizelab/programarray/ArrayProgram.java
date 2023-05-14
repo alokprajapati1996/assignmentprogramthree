@@ -39,6 +39,15 @@ public class ArrayProgram {
         }
         System.out.println("maximum value in element:"+max);
     }
+    public static void smallestElement(int arr[]) {
+        int small = arr[0];
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] < small) {
+                small = arr[i];
+            }
+        }
+        System.out.println("maximum value in element:" + small);
+    }
         public static void main(String[] args) {
             Scanner sc = new Scanner(System.in);
             System.out.println("Enter size of Array");
@@ -51,5 +60,6 @@ public class ArrayProgram {
             printArray(arr);
             printFrequency(arr);
             largestElement(arr);
+            smallestElement(arr);
     }
 }
