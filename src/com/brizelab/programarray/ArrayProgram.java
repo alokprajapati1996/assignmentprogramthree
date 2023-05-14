@@ -48,6 +48,12 @@ public class ArrayProgram {
         }
         System.out.println("maximum value in element:" + small);
     }
+    public static void evenPosition(int arr[]){
+        System.out.println("output array");
+        for (int i = 1; i < arr.length; i=i+2) {
+            System.out.print(arr[i]+" ");
+        }
+    }
         public static void main(String[] args) {
             Scanner sc = new Scanner(System.in);
             System.out.println("Enter size of Array");
@@ -61,5 +67,6 @@ public class ArrayProgram {
             printFrequency(arr);
             largestElement(arr);
             smallestElement(arr);
+            evenPosition(arr);
     }
 }
